@@ -31,5 +31,8 @@ class Car:
 
 
 car1 = Car("ABC-123", 142, 0, 0)
+car1.accelerate(30)
+car1.accelerate(70)
+car1.accelerate(50)
 print(f"Car's current speed: {car1.current_speed} km/h.")
 print(f"Car's current speed: {car1.current_speed} km/h. ")
