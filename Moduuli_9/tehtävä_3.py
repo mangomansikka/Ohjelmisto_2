@@ -13,7 +13,6 @@ class Car:
         self.current_speed = current_speed
         self.distance_traveled = distance_traveled
     def accelerate(self, velocity):
-        print(velocity)
         if velocity > 0:
             self.current_speed += velocity
             if self.current_speed + velocity > self.top_speed:
