@@ -52,7 +52,7 @@ while competition:
         if car.distance_traveled >= 10000:
             competition = False
 
-print("The competition is finished!")
+print("The competition has finished!")
 distances = []
 winners = {}
 winner = 0
