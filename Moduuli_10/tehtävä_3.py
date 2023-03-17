@@ -49,7 +49,7 @@ class House:
 
 
 all_elevators = 0
-bottom_floor = input("What is the bottom floor:")
+bottom_floor = input("What is the bottom floor: ")
 top_floor = input("What is the top floor: ")
 variables = int(input("How many elevators there are: "))
 house1 = House(bottom_floor, top_floor, variables)
