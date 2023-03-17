@@ -43,7 +43,7 @@ class House:
         elevator_list[elevator].move_to(floor)
 
     def fire_alarm(self):
-        print("RIINGGGG there is a fire! All elevators are moved to teh bottom floor!")
+        print("RIINGGGG there is a fire! All elevators are moved to the bottom floor!")
         for elevator in elevator_list:
             elevator.move_to(elevator.bot_floor)
 
