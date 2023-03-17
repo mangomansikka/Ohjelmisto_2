@@ -52,6 +52,7 @@ all_elevators = 0
 bottom_floor = input("What is the bottom floor: ")
 top_floor = input("What is the top floor: ")
 variables = int(input("How many elevators there are: "))
+variables = variables - 1
 house1 = House(bottom_floor, top_floor, variables)
 
 while all_elevators <= house1.elevators:
