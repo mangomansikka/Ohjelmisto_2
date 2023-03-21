@@ -23,9 +23,12 @@ class Book(Publication):
         super().__init__(name)
 
     def print(self):
-        print(f"Book's name: {self.name}")
-        print(f"Book's author: {self.writer}")
+        print("------------------------------")
+        print("The book's information")
+        print(f"Name: {self.name}")
+        print(f"Author: {self.writer}")
         print(f"The number of pages: {self.pages}")
+        print("------------------------------")
 
 class Magazine(Publication):
     def __init__(self, name, writer, eic):
@@ -35,9 +38,11 @@ class Magazine(Publication):
         super().__init__(name)
 
     def print(self):
-        print(f"Magazine's name: {self.name}")
-        print(f"Magazine's writer: {self.writer}")
-        print(f"Magazine's editor-in-chief: {self.eic}")
+        print("------------------------------")
+        print("The magazine's information")
+        print(f"Name: {self.name}")
+        print(f"Writer: {self.writer}")
+        print(f"Editor-in-chief: {self.eic}")
 
 magazine1 = Magazine("Magazine", "Aku Ankka", "Aki Hyyppä")
 book1 = Book("Hytti n:o 6", "Rosa Liksom", 200)
