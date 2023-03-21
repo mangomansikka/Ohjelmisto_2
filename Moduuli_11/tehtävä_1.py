@@ -12,12 +12,15 @@ Luo pääohjelmassa julkaisut Aku Ankka (päätoimittaja Aki Hyyppä) ja Hytti n
 class Publication:
     book = 0
     magazine = 0
+    def __init__(self, nimi):
+        self.nimi = nimi
 
 class Book(Publication):
     def __init__(self, name, writer, pages):
         self.name = name
         self.writer = writer
         self.pages = pages
+        super().__init__(name)
 
     def print(self):
         print(f"Book's name: {self.name}")
@@ -29,6 +32,7 @@ class Magazine(Publication):
         self.name = name
         self.writer = writer
         self.eic = eic
+        super().__init__(name)
 
     def print(self):
         print(f"Magazine's name: {self.name}")
